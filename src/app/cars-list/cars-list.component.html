@@ -12,30 +12,12 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
+        <tr *ngFor="let cars of Volkswagen">
             <td>{{cars.marca}}</td>
             <td>{{cars.nombre}}</td>
             <td>{{cars.modelo}}</td>
             <td>{{cars.categoria}}</td>
             <td><img [src]="cars.imagen" [alt]="cars.nombre"></td>
-        </tr>    
-    </tbody>
-    <tbody>
-        <tr>
-            <td>{{tiguan.marca}}</td>
-            <td>{{tiguan.nombre}}</td>
-            <td>{{tiguan.modelo}}</td>
-            <td>{{tiguan.categoria}}</td>
-            <td><img [src]="tiguan.imagen" [alt]="tiguan.nombre"></td>
-        </tr>    
-    </tbody>
-    <tbody>
-        <tr>
-            <td>{{amarok.marca}}</td>
-            <td>{{amarok.nombre}}</td>
-            <td>{{amarok.modelo}}</td>
-            <td>{{amarok.categoria}}</td>
-            <td><img [src]="amarok.imagen" [alt]="amarok.nombre"></td>
         </tr>    
     </tbody>
 </table>
