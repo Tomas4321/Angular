@@ -1,6 +1,5 @@
 <h2>Lista de Autos disponibles</h2>
 
-
 <table class="table">
     <thead>
         <tr>
@@ -8,6 +7,7 @@
             <th>Nombre</th>
             <th>Modelo</th>
             <th>Categoria</th>
+            <th>Stock</th>
             <th>Imagen</th>
         </tr>
     </thead>
@@ -17,6 +17,7 @@
             <td>{{cars.nombre}}</td>
             <td>{{cars.modelo}}</td>
             <td>{{cars.categoria}}</td>
+            <td>{{cars.stock}}</td>
             <td><img class="img" [src]="cars.imagen" [alt]="cars.nombre"></td>
         </tr>    
     </tbody>
