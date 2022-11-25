@@ -3,6 +3,7 @@ export interface Cars {
     nombre : string;
     modelo: string;
     categoria : string;
+    precio : number;
     stock : number;
     imagen : string;
 }
