@@ -5,5 +5,6 @@ export interface Cars {
     categoria : string;
     precio : number;
     stock : number;
+    cantidad : number;
     imagen : string;
 }

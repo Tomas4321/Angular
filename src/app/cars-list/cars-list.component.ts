@@ -16,6 +16,7 @@ export class CarsListComponent implements OnInit {
       categoria : "Auto",
       precio : 20000,
       stock : 1000000,
+      cantidad : 0,
       imagen : "assets/img/ventoo.jpg",
     },  
     {
@@ -25,6 +26,7 @@ export class CarsListComponent implements OnInit {
       categoria : "Suv",
       precio : 25000,
       stock : 1500000,
+      cantidad : 0,
       imagen : "assets/img/tiguan.jpg",
     },
     {
@@ -34,6 +36,7 @@ export class CarsListComponent implements OnInit {
       categoria : "Camioneta",
       precio : 40000,
       stock : 0,
+      cantidad : 0,
       imagen : "assets/img/amarok.jpg",
     },
   ];
@@ -42,4 +45,7 @@ export class CarsListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  cargarCantidad(cars: Cars): void{
+    
+  }
 }

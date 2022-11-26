@@ -8,17 +8,20 @@
             <th>Nombre</th>
             <th>Modelo</th>
             <th>Categoria</th>
-            <th>Stock</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let cars of Volkswagen">
-            <td><img class="img" class ="carousel-item active" [src]="cars.imagen" [alt]="cars.nombre"></td>
+            <td> <img class="img-fluid img-thumbnail" class ="carousel-item active" [src]="cars.imagen" [alt]="cars.nombre"></td>
             <td>{{cars.marca}}</td>
             <td>{{cars.nombre}}</td>
             <td>{{cars.modelo}}</td>
             <td>{{cars.categoria}}</td>
             <td>{{cars.precio | currency}}</td>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <button class="btn btn-primary btn-sm" (click)="cargarCantidad(cars)">Enviar</button>
             <td class="badge rounded-pill text-bg-danger" *ngIf="cars.stock == 0"> Sin stock de fabrica </td>
         </tr>    
     </tbody>
