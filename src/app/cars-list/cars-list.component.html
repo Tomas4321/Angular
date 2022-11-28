@@ -1,4 +1,4 @@
-<h2>Lista de Autos disponibles</h2>
+<h2>Lista de Autos Volkswagen</h2>
 
 <table class="table">
     <thead>
@@ -20,8 +20,12 @@
             <td>{{cars.modelo}}</td>
             <td>{{cars.categoria}}</td>
             <td>{{cars.precio | currency}}</td>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-            <button class="btn btn-primary btn-sm" (click)="cargarCantidad(cars)">Enviar</button>
+            <td>
+                <button (click)="restarCantidad(cars)" >-</button>
+                <input type="number" [(ngModel)]="cars.cantidad" (keyup)="cambiarCantidad($event, cars)" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <!-- <button class="btn btn-primary btn-sm">Enviar</button> -->
+                <button (click)="incrementarCantidad(cars)">+</button>
+            </td>
             <td class="badge rounded-pill text-bg-danger" *ngIf="cars.stock == 0"> Sin stock de fabrica </td>
         </tr>    
     </tbody>

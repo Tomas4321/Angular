@@ -15,7 +15,7 @@ export class CarsListComponent implements OnInit {
       modelo : "2019",
       categoria : "Auto",
       precio : 20000,
-      stock : 1000000,
+      stock : 100001,
       cantidad : 0,
       imagen : "assets/img/ventoo.jpg",
     },  
@@ -45,7 +45,24 @@ export class CarsListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  cargarCantidad(cars: Cars): void{
-    
+  restarCantidad(cars: Cars): void{
+    if(cars.cantidad > 0 ){
+      cars.cantidad--;
+    }
   }
+
+  incrementarCantidad(cars: Cars): void{
+    if(cars.cantidad < cars.stock){
+      cars.cantidad++;
+    }
+  }
+
+  cambiarCantidad(event: any, cars: Cars ): void{
+    console.log(event.key);
+    if(event.cars.stock > event.cars.cantidad){
+      alert("No hay stock");
+    }
+    event.preventDefault();
+  }
+
 }

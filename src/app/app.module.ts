@@ -4,13 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CarsListComponent } from './cars-list/cars-list.component';
 
+import { FormsModule } from '@angular/forms'
+
 @NgModule({
   declarations: [
     AppComponent,
     CarsListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
