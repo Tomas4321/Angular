@@ -5,15 +5,15 @@ import { VolkswagenSpecsComponent } from "./volkswagen-specs/volkswagen-specs.co
 import { CarsListComponent } from './cars-list/cars-list.component';
 import { CarsContactComponent } from './cars-contact/cars-contact.component';
 
-const routes: Routes =[
+const routes: Routes = [
     {
         path: '',
         redirectTo: 'cars',
         pathMatch: 'full'
     },
     {
-        path: 'inicio',
-        component: CarsListComponent
+        path: 'volkswagen',
+        component: VolkswagenCarsComponent
     },
     {
         path: 'contacto',
