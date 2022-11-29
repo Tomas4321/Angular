@@ -58,11 +58,6 @@ export class CarsListComponent implements OnInit {
   }
 
   cambiarCantidad(event: any, cars: Cars ): void{
-    console.log(event.key);
-    if(event.cars.stock > event.cars.cantidad){
-      alert("No hay stock");
-    }
-    event.preventDefault();
+    
   }
-
 }
