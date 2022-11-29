@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { CarsListComponent } from './cars-list/cars-list.component';
 
 import { FormsModule } from '@angular/forms';
-import { CarsContactComponent } from './cars-contact/cars-contact.component'
+import { CarsContactComponent } from './cars-contact/cars-contact.component';
+import { VolkswagenCarsComponent } from './volkswagen-cars/volkswagen-cars.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     CarsListComponent,
-    CarsContactComponent
+    CarsContactComponent,
+    VolkswagenCarsComponent
   ],
   imports: [
     BrowserModule,
