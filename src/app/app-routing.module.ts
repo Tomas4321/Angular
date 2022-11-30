@@ -16,7 +16,7 @@ const routes: Routes = [
         component: VolkswagenCarsComponent
     },
     {
-        path: 'contacto',
+        path: 'especificaciones',
         component: VolkswagenSpecsComponent
     }
 
